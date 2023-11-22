@@ -64,9 +64,9 @@ INSERT INTO email (email, student_id) VALUES
 
 -- Test data for instructor table
 INSERT INTO instructor (teach_ensembles, personal_num, first_name, last_name, zip, school_id, adress_id) VALUES
-(true, '444444444', 'David', 'Miller', '54321', 1, 202),
-(false, '555555555', 'Eva', 'Jones', '98765', 1, 303),
-(true, '666666666', 'Frank', 'Brown', '12345', 1, 101);
+(true, '444444444', 'David', 'Miller', '54321', 1, 1),
+(false, '555555555', 'Eva', 'Jones', '98765', 1, 2),
+(true, '666666666', 'Frank', 'Brown', '12345', 1, 3);
 
 -- Test data for invoice table
 INSERT INTO invoice (total, discount, student_id) VALUES
