@@ -1,3 +1,4 @@
+CREATE OR REPLACE VIEW ensembles_seats AS
 SELECT 
     TO_CHAR(e.time, 'Dy') AS Day,
     genre,
@@ -11,3 +12,6 @@ LEFT JOIN student_ensembles se ON e.id = se.ensembles_id
 WHERE e.time BETWEEN NOW() AND NOW() + INTERVAL '1 WEEK'
 GROUP BY e.time, e.genre, e.max_students
 ORDER BY  e.genre;
+
+--- exempel query:
+SELECT * FROM ensembles_seats;

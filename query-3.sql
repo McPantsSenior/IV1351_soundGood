@@ -1,3 +1,4 @@
+CREATE OR REPLACE VIEW lesson_num AS
 SELECT
   instructor_id AS "Instructor Id",
   first_name AS "First Name",
@@ -21,3 +22,6 @@ LEFT JOIN instructor ON combined_data.instructor_id = instructor.id
 GROUP BY combined_data.instructor_id, first_name, last_name
 HAVING SUM(no_of_lessons) > 9 --- set a minimum number of lessons
 ORDER BY SUM(no_of_lessons) DESC;
+
+--- exempel query:
+SELECT * FROM lesson_num;

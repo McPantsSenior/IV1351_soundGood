@@ -197,8 +197,8 @@ INSERT INTO ensembles (max_students, min_students, genre, price, time, price_his
 (8, 4, 'Jazz', 800.00, '2023-02-01', 2, 2),
 (4, 2, 'Rock', 800.00, '2023-02-01', 2, 3),
 (9, 4, 'Pop', 800.00, '2023-02-01', 3, 4),
-(10, 5, 'Jazz', 800.00, '2023-02-01', 1, 5),
-(12, 5, 'Rock', 1200.00, '2023-03-01', 3, 6);
+(10, 5, 'Jazz', 800.00, '2023-12-01', 1, 5),
+(12, 5, 'Rock', 1200.00, '2023-12-03', 3, 6);
 
 -- Test data for ensembles_instruments table
 INSERT INTO ensembles_instruments (instrument_id, ensambles_id) VALUES

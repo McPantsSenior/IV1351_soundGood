@@ -1,4 +1,4 @@
-CREATE VIEW lessons AS (
+CREATE OR REPLACE VIEW lessons AS (
 SELECT
     month,
     year,
@@ -57,8 +57,7 @@ ORDER BY
 
 --- Test Query could be:
 
----SELECT *
----FROM lessons
----WHERE month = 1
-
+SELECT *
+FROM lessons
+WHERE month = 1;
 ---month 1 is January
